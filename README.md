@@ -21,9 +21,9 @@ Mogitate（商品登録管理アプリ）
 ・php artisan db:seed
 
 ・php artisan storage:link
-・本アプリではアップロード画像を storage/app/public に保存しています。
-・ブラウザから画像を表示するために、public/storage へのシンボリックリンク作成が必要です。
-・そのため上記コマンドを実行してください。
+本アプリではアップロード画像を storage/app/public に保存しています。
+ブラウザから画像を表示するために、public/storage へのシンボリックリンク作成が必要です。
+そのため上記コマンドを実行してください。
 
 # 開発環境
 ・商品一覧画面：http://localhost/products
