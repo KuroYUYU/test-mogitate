@@ -38,7 +38,6 @@ GitHub 上には画像ファイルは含めていません。
 # 使用技術(実行環境)
 ・PHP:8.1.33
 
-
 ・Laravel:8.83.29
 
 ・MySQL:Ver 8.0.26
@@ -46,3 +45,5 @@ GitHub 上には画像ファイルは含めていません。
 ・nginx:1.21.1
 
 # ER図
+<img width="861" height="473" alt="スクリーンショット 2025-12-08 6 21 07" src="https://github.com/user-attachments/assets/5426912b-6acb-4c92-9ad5-f82fde4d2df4" />
+
