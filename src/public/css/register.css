@@ -1,0 +1,162 @@
+body {
+    background: whitesmoke;
+}
+
+/* 中央のカード */
+.product-register__card {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 20px 30px;
+}
+
+.product-register__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* フォーム全体 */
+.product-register__form {
+    width: 100%;
+}
+
+.product-register__group {
+    margin-bottom: 24px;
+}
+
+.product-register__label-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.product-register__label {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* 必須バッジ */
+.product-register__badge {
+    display: inline-block;
+    padding: 2px 6px;
+    margin-left: 6px;
+    font-size: 11px;
+}
+
+.product-register__badge--required {
+    background-color: red;
+    color: white;
+}
+
+/* 入力フィールド共通 */
+.product-register__input,
+.product-register__textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid seashell;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/* テキストエリア */
+.product-register__textarea {
+    resize: vertical;
+    min-height: 140px;
+    resize: none;
+}
+
+.product-register__file {
+    margin-top: 6px;
+}
+
+/* プレビュー画像エリア */
+.product-register__preview {
+    margin-bottom: 8px;
+}
+
+.product-register__preview img {
+    max-width: 280px;
+    max-height: 190px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+/* 季節チェック群 */
+.product-register__season-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 8px;
+}
+
+.product-register__season-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.product-register__season-input {
+    cursor: pointer;
+}
+
+.product-register__season-label {
+    cursor: pointer;
+}
+
+/* バリデーションエラー */
+.product-register__error {
+    margin-top: 4px;
+    font-size: 12px;
+    color: red;
+    /* detail と同じ */
+}
+
+/* 下部ボタンエリア */
+.product-register__actions {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+/* ボタン共通 */
+.product-register__button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* 戻るボタン */
+.product-register__button--secondary {
+    background-color: darkgray;
+    color: black;
+    text-decoration: none;
+}
+
+/* 登録ボタン */
+.product-register__button--primary {
+    background-color: orange;
+    color: black;
+}
+
+/* エラーメッセージ */
+.product-register__error {
+    color: red;
+    font-size: 12px;
+}

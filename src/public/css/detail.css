@@ -1,0 +1,128 @@
+body {
+    background: whitesmoke;
+}
+
+.product-detail {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* パンくずリスト */
+.product-detail__breadcrumb {
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.product-detail__breadcrumb-link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* 上段：画像＋情報を横並び */
+.product-detail__top {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 24px;
+}
+
+.product-detail__image-area {
+    width: 360px;
+}
+
+.product-detail__image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* 右側フォーム */
+.product-detail__info {
+    flex: 1;
+}
+
+.product-detail__field {
+    margin-bottom: 16px;
+}
+
+.product-detail__label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.product-detail__input {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid seashell;
+}
+
+.product-detail__season-item {
+    margin-right: 35px;
+}
+
+/* 説明エリア */
+.product-detail__bottom {
+    margin-top: 16px;
+}
+
+.product-detail__textarea {
+    width: 100%;
+    min-height: 140px;
+    padding: 10px;
+    border-radius: 4px;
+    resize: none;
+}
+
+/* ボタン */
+.product-detail__actions {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.product-detail__button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+}
+
+.product-detail__button--secondary {
+    background-color: darkgray;
+    color: black;
+    text-decoration: none;
+}
+
+.product-detail__button--primary {
+    background-color: orange;
+}
+
+/* ゴミ箱マークのみだと赤くなりませんでした、そのため背景赤 */
+.product-detail__delete {
+    width: 40px;
+    height: 40px;
+    color: red;
+    background-color: red;
+}
+
+.product-detail__delete-form {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+/* エラーメッセージ */
+.product-detail__error {
+    color: red;
+    font-size: 12px;
+}

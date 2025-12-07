@@ -1,0 +1,149 @@
+body {
+    background: whitesmoke;
+}
+
+/* 全体を2カラム */
+.product-page {
+    display: flex;
+    gap: 40px;
+    padding: 40px 80px;
+}
+
+/* 左サイドバー */
+.product-sidebar {
+    width: 260px;
+}
+
+/* 検索フォーム */
+.product-search__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid seashell;
+    border-radius: 50px;
+}
+
+.product-search__button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: orange;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 並べ替えブロック */
+.product-sort {
+    margin-top: 24px;
+}
+
+.product-sort__label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* 並べ替えセレクト：幅・高さ・線を検索フォームに寄せる */
+.product-sort__select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid seashell;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.sort-reset-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    border: 1px solid orange;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+}
+
+/* 右エリア */
+.product-content {
+    flex: 1;
+}
+
+/* タイトル＋追加ボタン */
+.product-content__header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.product-content__add-button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: black;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* 検索時はボタンを非表示にする */
+.product-content__add-button--hidden {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* 商品カードエリア */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product-card__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-card__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+/* リンク部の下線を消す */
+.product-card a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ページネーション */
+.product-pagination {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 「前/次」を表示させない */
+.product-pagination nav>div:first-child {
+    display: none;
+}
+
+/* Showing ...を表示させない */
+.product-pagination nav>div:nth-child(2)>div:first-child {
+    display: none;
+}
+
+svg.w-5.h-5 {
+    width: 40px;
+    height: 40px;
+}
