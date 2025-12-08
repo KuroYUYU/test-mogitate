@@ -3,7 +3,7 @@ Mogitate（商品登録管理アプリ）
 
 # 環境構築
 ## Dockerビルド
-・git clone git@github.com:KuroYUYU/変える.git
+・git clone git@github.com:KuroYUYU/test-mogitate.git
 
 ・docker-compose up -d --build
 
